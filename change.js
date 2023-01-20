@@ -15,6 +15,10 @@ people.name = "Luma Silva";
 
 console.log(people);
 
+delete people.profession;
+
+console.log(people);
+console.log(people.profession);
 
 //Não tem como reatribuir uma nova const
 // const newPeople = {
