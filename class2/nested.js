@@ -6,7 +6,7 @@ const client = {
 };
 
 client.adress = {
-    rua: "R. Jojo Climber",
+    road: "R. Jojo Climber",
     number: 1548,
     apartment: true,
     complement: "ap 74",
