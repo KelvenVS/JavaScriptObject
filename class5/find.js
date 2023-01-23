@@ -1,15 +1,16 @@
-const clients =  require("./clients.json");
+const clients = require("./clients.json");
 // console.log(clients);
 
-function find(list , key , value){
-    //Same value and type "==="
-    // return list.find((item) => item[key] === value);
-    return list.find((item) => item[key].includes(value));
+//Search
+function find(list, key, value) {
+  //Same value and type "==="
+  // return list.find((item) => item[key] === value);
+  return list.find((item) => item[key].includes(value));
 }
 
-const found = find(clients, "nome" , "Kirby");
+const found = find(clients, "nome", "Kirby");
 console.log(found);
-const found2 = find(clients, "email" , "aranahan2@yellowbook.com");
+const found2 = find(clients, "email", "aranahan2@yellowbook.com");
 console.log(found2);
 
 // if (true == 'true')  	// Retorna true
@@ -20,4 +21,5 @@ console.log(found2);
 // if (true === true)   	// Retorna  true (igualdade estrita, mesmo tipo e mesmo valor)
 
 //JavaScript - Diferença entre =, == e ===
-//https://www.macoratti.net/18/09/js_dif1.htm 
+//https://www.macoratti.net/18/09/js_dif1.htm
+
